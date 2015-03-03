@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhantomRunner", "PhantomRunner\PhantomRunner.csproj", "{FAF40B19-A7A0-47AF-9604-9F0602B12E85}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{19705594-B030-4A76-AB8A-474B1BF2D8F0}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nuget", "Nuget", "{AC39DB5B-1EB1-4578-A505-F03116E91180}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchCrawlerHelper", "SearchCrawlerHelper\SearchCrawlerHelper.csproj", "{99BD3F42-9604-4042-AD4F-B5B7C3FA18C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PhantomRunner", "PhantomRunner", "{BA329151-AFEB-4B9F-94B5-7EA871E207FB}"
+	ProjectSection(SolutionItems) = preProject
+		Nuget\PhantomRunner\CreatePackage.bat = Nuget\PhantomRunner\CreatePackage.bat
+		Nuget\PhantomRunner\package\PhantomRunner.nuspec = Nuget\PhantomRunner\package\PhantomRunner.nuspec
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SearchCrawlerHelper", "SearchCrawlerHelper", "{E1911E46-266C-4252-BA06-A74AC88B048F}"
+	ProjectSection(SolutionItems) = preProject
+		Nuget\SearchCrawlerHelper\CreatePackage.bat = Nuget\SearchCrawlerHelper\CreatePackage.bat
+		Nuget\SearchCrawlerHelper\Package\SearchCrawlerHelper.nuspec = Nuget\SearchCrawlerHelper\Package\SearchCrawlerHelper.nuspec
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhantomRunner.Sample", "PhantomRunner.Sample\PhantomRunner.Sample.csproj", "{F71456CD-6CCA-42DD-A61E-830E0810EA99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchCrawlerHelper.Sample", "SearchCrawlerHelper.Sample\SearchCrawlerHelper.Sample.csproj", "{57806A10-FF12-4422-B924-AC3C79E0300D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAF40B19-A7A0-47AF-9604-9F0602B12E85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAF40B19-A7A0-47AF-9604-9F0602B12E85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAF40B19-A7A0-47AF-9604-9F0602B12E85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAF40B19-A7A0-47AF-9604-9F0602B12E85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99BD3F42-9604-4042-AD4F-B5B7C3FA18C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99BD3F42-9604-4042-AD4F-B5B7C3FA18C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99BD3F42-9604-4042-AD4F-B5B7C3FA18C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99BD3F42-9604-4042-AD4F-B5B7C3FA18C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F71456CD-6CCA-42DD-A61E-830E0810EA99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F71456CD-6CCA-42DD-A61E-830E0810EA99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F71456CD-6CCA-42DD-A61E-830E0810EA99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F71456CD-6CCA-42DD-A61E-830E0810EA99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57806A10-FF12-4422-B924-AC3C79E0300D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57806A10-FF12-4422-B924-AC3C79E0300D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57806A10-FF12-4422-B924-AC3C79E0300D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57806A10-FF12-4422-B924-AC3C79E0300D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BA329151-AFEB-4B9F-94B5-7EA871E207FB} = {AC39DB5B-1EB1-4578-A505-F03116E91180}
+		{E1911E46-266C-4252-BA06-A74AC88B048F} = {AC39DB5B-1EB1-4578-A505-F03116E91180}
+	EndGlobalSection
+EndGlobal
