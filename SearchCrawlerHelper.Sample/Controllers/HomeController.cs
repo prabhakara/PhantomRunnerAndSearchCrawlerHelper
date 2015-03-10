@@ -14,10 +14,9 @@ namespace SearchCrawlerHelper.Sample.Controllers
         public async Task<ActionResult> Index()
         {
             if (Request.QueryString["_escaped_fragment_"] != null)
-            {                
-                //We´ll crawl the normal url without _escaped_fragment_
-                var crawler = new PageRenderer();
-                var result = await crawler.RenderAsync(new Uri(Request.Url.AbsoluteUri.Replace("?_escaped_fragment_=", "")));
+            {                                
+                var renderer = new PageRenderer();
+                var result = await renderer.RenderAsync(new Uri(Request.Url.AbsoluteUri.Replace("?_escaped_fragment_=", "")));
                 
                 return Content(result);                
             }

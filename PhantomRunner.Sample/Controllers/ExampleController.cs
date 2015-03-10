@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Threading.Tasks;
@@ -12,16 +13,19 @@ namespace PhantomRunner.Sample.Controllers
     {
         // GET: Example
         public async Task<ActionResult> Index()
-        {
-            var runScript = new RunScript();
-
+        {            
             try
-            {
-                var result = await runScript.RunAsync("scripts/sample.js");
+            {                                
+                Trace.WriteLine("RunScript working directory: " + AppDomain.CurrentDomain.RelativeSearchPath, "Information");
+
+                var runScript = new RunScript();
+                
+                var result = await runScript.RunAsync("../scripts/sample.js");
                 ViewBag.Result = result;
             }
             catch (ExternalException ex)
             {
+                Trace.WriteLine("Error running script " + ex.GetBaseException().Message,"Error");
                 ViewBag.Result = ex.Message; ;
             }
             

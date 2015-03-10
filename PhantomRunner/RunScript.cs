@@ -63,14 +63,14 @@ namespace PhantomRunner
                 Arguments = arguments,
                 FileName = fileName,
                 UseShellExecute = false,
-                CreateNoWindow = false,
+                CreateNoWindow = true,
                 RedirectStandardOutput = true,
                 RedirectStandardError = true,
                 RedirectStandardInput = true,
                 StandardOutputEncoding = System.Text.Encoding.UTF8
             };
 
-            var process = new Process() { StartInfo = startInfo, EnableRaisingEvents = true };
+            var process = new Process() { StartInfo = startInfo};
 
                 process.OutputDataReceived += (sender, args) =>
                 {

@@ -66,8 +66,8 @@
   </Target>
   <PropertyGroup>
     <PostBuildEvent>if '$(Configuration)'=='Release' (
-    cd $(SolutionDir)\Nuget\PhantomRunner
-    call "CreatePackage.bat"
+    cd $(SolutionDir)Nuget
+    call "PhantomRunner\CreatePackage.bat"
 )</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

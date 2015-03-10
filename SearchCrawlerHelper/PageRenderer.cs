@@ -11,7 +11,7 @@ namespace PhantomRunner
 {
     public class PageRenderer
     {
-        private string workingDirectory, fileName;        
+        private string workingDirectory, createPageScript;        
 
         public PageRenderer():this("")
         {            
@@ -24,6 +24,7 @@ namespace PhantomRunner
         public PageRenderer(string workingDirectory, string createPageScript)
         {
             this.workingDirectory = workingDirectory;
+            this.createPageScript = createPageScript;
         }
 
         public Task<string> RenderAsync(Uri url)
@@ -35,7 +36,7 @@ namespace PhantomRunner
         {
             var runScript = String.IsNullOrEmpty(this.workingDirectory) ? new RunScript() : new RunScript(this.workingDirectory);
 
-            return runScript.RunAsync(@"..\scripts\createPage.js", url.AbsoluteUri,optionsFileName);         
+            return runScript.RunAsync(createPageScript, url.AbsoluteUri, optionsFileName);         
         }
 
         public string CreatePageScript { get; set; }        

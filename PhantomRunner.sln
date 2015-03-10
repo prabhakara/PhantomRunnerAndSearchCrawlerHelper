@@ -32,6 +32,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhantomRunner.Sample", "Pha
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchCrawlerHelper.Sample", "SearchCrawlerHelper.Sample\SearchCrawlerHelper.Sample.csproj", "{57806A10-FF12-4422-B924-AC3C79E0300D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{46FBB676-7AD5-4BE4-9F20-314919DCFCBD}"
+	ProjectSection(SolutionItems) = preProject
+		License.txt = License.txt
+		readme.md = readme.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
